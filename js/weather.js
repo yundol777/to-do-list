@@ -8,10 +8,11 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weatherContainer = document.querySelector(
-        "#weather span:first-child"
-      );
-      const city = document.querySelector("#weather span:last-child");
+      const temperature = document.querySelector("#today-weather #temp");
+      const weather = document.querySelector("#today-weather #weather");
+      const city = document.querySelector("#today-weather #city");
+      temperature.innerText = `${Math.floor(data.main.temp)}°`;
+      weather.innerText = `${data.weather[0].main}`;
       city.innerText = data.name;
       weatherContainer.innerText = `${data.weather[0].main} / ${data.main.temp}`;
     }); //자바스크립트가 url을 부른다.(promise)

@@ -10,6 +10,17 @@ function saveToDos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
+function finishToDo(event) {
+  const checkbox = event.target;
+  const li = checkbox.parentElement;
+
+  if (checkbox.checked) {
+    li.classList.add("finished");
+  } else {
+    li.classList.remove("finished");
+  }
+}
+
 function deleteToDo(event) {
   const li = event.target.parentElement;
   li.remove();
@@ -20,11 +31,18 @@ function deleteToDo(event) {
 function paintToDo(newTodo) {
   const li = document.createElement("li");
   li.id = newTodo.id;
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.className = newTodo.id;
+  checkbox.addEventListener("change", (checkbox) => {
+    finishToDo(checkbox);
+  });
   const span = document.createElement("span");
   span.innerText = newTodo.text;
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteToDo);
+  li.appendChild(checkbox);
   li.appendChild(span);
   li.appendChild(button);
   toDoList.appendChild(li);

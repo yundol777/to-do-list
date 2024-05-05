@@ -4,8 +4,7 @@ const quotes = [
     author: "<센과 치히로의 행방불명, 2001>",
   },
   {
-    quote:
-      "싫다던가, 돌아가고 싶던가라고 말하고 싶어질 때도 있겠지만 괴로워도 참고 기회를 기다리는 거야",
+    quote: "괴로워도 참고 기회를 기다리는 거야",
     author: "<센과 치히로의 행방불명, 2001>",
   },
   {
@@ -33,8 +32,7 @@ const quotes = [
     author: "<마녀 배달부 키키, 1989>",
   },
   {
-    quote:
-      "자기 안의 원석을 찾아내서 오랜 시간 다듬어 가는 거란다. 시간이 많이 드는 일이지",
+    quote: "자기 안의 원석을 찾아내서 오랜 시간 다듬어 가는 거란다",
     author: "<귀를 기울이면, 1995>",
   },
   {
@@ -83,8 +81,8 @@ const quotes = [
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote p:first-child");
+const author = document.querySelector("#quote p:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 

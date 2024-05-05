@@ -4,37 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        type="text"
-        required
-        maxlength="15"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h2 id="clock">00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+    <section class="left-section">
+      <h2 id="date"></h2>
+      <section class="container to-do-container">
+        <form id="todo-form">
+          <input
+            type="text"
+            placeholder=" Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </section>
+    </section>
+
+    <section class="middle-section">
+      <h2 id="clock">00:00</h2>
+      <div id="quote">
+        <p></p>
+        <p></p>
+      </div>
+    </section>
+
+    <section class="right-section">
+      <section class="container login-section">
+        <form id="login-form" class="hidden">
+          <input
+            type="text"
+            required
+            maxlength="15"
+            placeholder="What is your name?"
+          />
+          <input type="submit" value="Log In" />
+        </form>
+
+        <h1 id="greeting" class="hidden"></h1>
+      </section>
+
+      <section class="right-middle-section">
+        <section class="container weather-section">
+          <div id="today-weather">
+            <span id="temp"></span>
+            <span id="weather"></span>
+            <p id="city"></p>
+          </div>
+        </section>
+
+        <section class="container dDay-section">
+          <p>올해 남은 날</p>
+          <p id="d-day"></p>
+        </section>
+      </section>
+
+      <section class="container app-section">
+        <img id="youtube" src="./img/youtube.png" />
+        <img id="google" src="./img/google.png" />
+        <img id="github" src="./img/github.png" />
+        <img id="notion" src="./img/notion.png" />
+        <img id="nomad" src="./img/nomad.png" />
+      </section>
+    </section>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/appLink.js"></script>
   </body>
 </html>
