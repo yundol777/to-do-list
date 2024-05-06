@@ -34,7 +34,7 @@ function getDDay() {
   dDay.innerText = `D-${leftDay}`;
 }
 
-getClock();
 getDate();
 getDDay();
+getClock();
 setInterval(getClock, 1000);
