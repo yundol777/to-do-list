@@ -1,7 +1,7 @@
-const images = ["0.jpg", "1.jpg", "2.jpg"];
+// const images = ["0.jpg", "1.jpg", "2.jpg"];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+// const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = `url(img/${chosenImage})`;
+// const bgImage = `url(img/${chosenImage})`;
 
-document.body.style.backgroundImage = bgImage;
+// document.body.style.backgroundImage = bgImage;
