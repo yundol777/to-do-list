@@ -1,7 +1,7 @@
 ## To-Do-List Project
 
 오늘의 할 일을 기록하는 웹 사이트 <br/>
-><https://yundol777.github.io/my-hobby-web/>
+><https://yundol777.github.io/to-do-list/>
 
 <br/>
 
