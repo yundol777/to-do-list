@@ -25,4 +25,4 @@
 
 ### 🖼️ 프로젝트 화면
 
-![main](https://github.com/yundol777/my-hobby-web/assets/133326746/5a9f9cec-c62d-4e21-ab1b-e8f5a7e49d4c)
+![main](https://github.com/yundol777/to-do-list/assets/133326746/b8816fc2-e928-4512-8a2f-65670be40d79)
